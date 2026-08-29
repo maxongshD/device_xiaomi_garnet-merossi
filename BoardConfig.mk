@@ -97,35 +97,6 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=garnet
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7435
 TARGET_KERNEL_CONFIG := \
-    gki_defconfig
-
-BOARD_BOOT_HEADER_VERSION := 4
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
-
-BOARD_KERNEL_CMDLINE := \
-    video=vfb:640x400,bpp=32,memsize=3072000 \
-    disable_dma32=on \
-    bootinfo.fingerprint=$(LINEAGE_VERSION) \
-    swinfo.fingerprint=$(LINEAGE_VERSION)
-
-BOARD_BOOTCONFIG := \
-    androidboot.hardware=qcom \
-    androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3
-
-# Kernel
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_RAMDISK_USE_LZ4 := true
-TARGET_NEEDS_DTBOIMAGE := true
-
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_IMAGE_NAME := Image
-
-TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=garnet
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7435
-TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/parrot_GKI.config \
     vendor/garnet_GKI.config \
@@ -145,7 +116,8 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3
+    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.selinux=permissive
 
 # Kernel modules
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm7435-modules
