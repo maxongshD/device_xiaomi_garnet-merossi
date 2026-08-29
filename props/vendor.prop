@@ -233,3 +233,8 @@ vendor.display.enable_cwb_fallback=0
 
 # OpenGL
 debug.renderengine.backend=gles
+
+# Force audio codec and power rails for PM8008 / DRM panel
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.voicecall=true
+vendor.audio.feature.primary_hal.enable=true
