@@ -238,3 +238,8 @@ debug.renderengine.backend=gles
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.voicecall=true
 vendor.audio.feature.primary_hal.enable=true
+
+# Disable CamX debugfs logging to prevent startup hangs
+persist.vendor.camera.debugfs.enable=0
+persist.vendor.camera.logstate=0
+vendor.camera.hal.debug=0
