@@ -1706,7 +1706,6 @@ vendor/bin/port-bridge|7c4a4aaf0eae340cefc356444e27121098f9d360
 vendor/bin/qti|cf2d721bd0c45214507d87764568396bb89a299a
 vendor/bin/rmt_storage|d71ddf2abdff5a853fbe4c2f6e17c4e6603b0548
 vendor/bin/shsusrd|9caeecaaa07cdd005ad0cb0901ecced17d002d6b
-vendor/bin/ssgqmigd|fe6b2150e77221a404981126a14a334aa676ac61
 vendor/bin/ssgtzd|805075fbd672242538bc1f9f08811ba98cbcdc2c
 vendor/bin/tftp_server|f7bbc7f5f0a15cb40bf5546cbfb26a1e633cfec7
 vendor/etc/data/dsi_config.xml|a74aa5b100df9085bfd6c8e4b35930ea85532370

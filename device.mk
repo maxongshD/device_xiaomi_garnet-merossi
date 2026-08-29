@@ -448,5 +448,19 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# Zygote
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.zygote=zygote64 \
+    ro.product.cpu.abilist=arm64-v8a \
+    ro.product.cpu.abilist64=arm64-v8a
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.product.cpu.abilist=arm64-v8a \
+    ro.vendor.product.cpu.abilist64=arm64-v8a
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.dex2oat-filter=verify \
+    ro.apex.updatable=true
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
