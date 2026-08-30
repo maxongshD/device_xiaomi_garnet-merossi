@@ -1145,6 +1145,8 @@ vendor/lib64/libsdmextension.so|52576a369b3be5e6add6b22a387c89e1fc27f004
 vendor/lib64/libtestutils.so|ff65bed29afd5cd8a1e6967a5cefcda9f1da6a99
 vendor/lib/libtinyxml2_1.so|d46a4b98a33a171438fe51a60886b6f0f3a8bf45
 vendor/lib64/libtinyxml2_1.so|dc71b5ce376c8073b2ec64292d963e911b57b551
+vendor/lib64/libsdmutils.so|3d0eb571aafaf887ba1a762f30b1446fa4e07b0c
+vendor/lib/libsdmutils.so|fce3472099a472edbaa8942efd14f0652a67b95d
 vendor/lib64/libqdcm-algo.so|53f991a19146ca0090dbf642b5f05f81cd80af2c
 vendor/lib/libqdcm-algo.so|0bccf8766e46323619f77a0c61d53472db37c3f4
 vendor/lib64/libqdcm-mode-parser.so|68d4026bdc20966577213422d34021b0c2af6494

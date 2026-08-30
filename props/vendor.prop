@@ -225,21 +225,3 @@ persist.vendor.vcb.enable=false
 
 # WLAN
 wifi.aware.interface=wifi-aware0
-
-# Notifier
-vendor.display.enable_round_corner=0
-vendor.display.disable_hw_recovery=1
-vendor.display.enable_cwb_fallback=0
-
-# OpenGL
-debug.renderengine.backend=gles
-
-# Force audio codec and power rails for PM8008 / DRM panel
-ro.vendor.audio.sdk.fluencetype=fluence
-persist.vendor.audio.fluence.voicecall=true
-vendor.audio.feature.primary_hal.enable=true
-
-# Disable CamX debugfs logging to prevent startup hangs
-persist.vendor.camera.debugfs.enable=0
-persist.vendor.camera.logstate=0
-vendor.camera.hal.debug=0
